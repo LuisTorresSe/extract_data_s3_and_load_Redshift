@@ -2,6 +2,7 @@
 import psycopg2
 from configparser import ConfigParser
 from utils import getListObjectBucket
+
 def extract_s3_and_load_redshift():
     parser = ConfigParser()
     parser.read('pipeline.conf')
